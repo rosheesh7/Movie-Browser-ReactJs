@@ -1,0 +1,21 @@
+.notfound-card {
+  text-align: center;
+  padding: 20px 0px;
+  margin: 250px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.notfound-card .notfound-title {
+  font-size: 4rem;
+  opacity: 0.6;
+}
+
+.notfound-card span {
+  font-size: 2rem;
+  font-weight: bold;
+  opacity: 0.3;
+}

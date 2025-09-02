@@ -14,13 +14,18 @@ nav ul {
   justify-content: space-evenly;
   gap: 50px;
   list-style-type: none;
+  text-decoration: none;
 }
-nav ul li {
+nav ul a {
   font-size: 1.15rem;
   cursor: pointer;
   transition: 0.5s ease-in-out;
+  text-decoration: none;
+  color: white;
+
+
 }
-nav ul li:hover {
+nav ul a:hover {
   color: #00c3ff;
 
   transform: scale(1.1, 1.1);

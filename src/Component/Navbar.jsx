@@ -1,19 +1,21 @@
 import "./Navbar.css";
 import { MdLocalMovies } from "react-icons/md";
 import { FaSearch } from "react-icons/fa";
+import { Link, NavLink } from "react-router";
+
 const Navbar = () => {
   return (
     <>
       <nav>
-        <div className="logo">
+        <NavLink to={"/"} className="logo">
           <MdLocalMovies size={32} />
           <span className="logo-title">CineMania</span>
-        </div>
+        </NavLink>
 
         <ul>
-          <li>Home</li>
-          <li>Trending</li>
-          <li>Top Rated</li>
+          <NavLink to={"/"}>Home</NavLink>
+          <NavLink to={"/trending"}>Trending</NavLink>
+          <NavLink to={"/toprated"}>Top Rated</NavLink>
         </ul>
 
         <div className="search-container">
