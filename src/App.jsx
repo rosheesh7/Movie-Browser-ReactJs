@@ -1,8 +1,7 @@
-import React from "react";
 import Navbar from "./Component/Navbar";
 import { Route, Routes } from "react-router";
 import HomePage from "./Pages/HomePage";
-import { TrendingPage } from "./Pages/TrendingPage";
+import PopularPage from "./Pages/PopularPage";
 import TopRatedPage from "./Pages/TopRatedPage";
 import NotFoundPage from "./Pages/NotFoundPage";
 const App = () => {
@@ -12,7 +11,7 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path={"/"} element={<HomePage />}></Route>
-          <Route path={"/trending"} element={<TrendingPage />}></Route>
+          <Route path={"/popular"} element={<PopularPage />}></Route>
           <Route path={"/toprated"} element={<TopRatedPage />}></Route>
           <Route path={"*"} element={<NotFoundPage />}></Route>
         </Routes>

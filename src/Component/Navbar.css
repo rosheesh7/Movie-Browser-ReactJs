@@ -1,11 +1,12 @@
 nav {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(23, 23, 23);
   padding: 5px 80px;
   margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 70px;
+  box-shadow: 0px 1px 20px rgb(67, 56, 56);
 }
 
 nav ul {
@@ -22,12 +23,9 @@ nav ul a {
   transition: 0.5s ease-in-out;
   text-decoration: none;
   color: white;
-
-
 }
 nav ul a:hover {
   color: #00c3ff;
-
   transform: scale(1.1, 1.1);
   transition: 0.5s ease-in-out;
   transition-delay: 0.1s;
@@ -38,6 +36,7 @@ nav ul a:hover {
   align-items: center;
   cursor: pointer;
   color: #00c3ff;
+  text-decoration: none;
 }
 .logo-title {
   font-size: 2rem;

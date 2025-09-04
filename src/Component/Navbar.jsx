@@ -14,7 +14,7 @@ const Navbar = () => {
 
         <ul>
           <NavLink to={"/"}>Home</NavLink>
-          <NavLink to={"/trending"}>Trending</NavLink>
+          <NavLink to={"/popular"}>Popular</NavLink>
           <NavLink to={"/toprated"}>Top Rated</NavLink>
         </ul>
 
