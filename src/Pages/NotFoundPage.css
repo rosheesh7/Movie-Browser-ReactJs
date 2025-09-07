@@ -7,10 +7,12 @@
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  color: white;
 }
 
 .notfound-card .notfound-title {
   font-size: 4rem;
+  color: white;
   opacity: 0.6;
 }
 

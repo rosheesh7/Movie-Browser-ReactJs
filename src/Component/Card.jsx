@@ -4,7 +4,7 @@ import "./Card.css";
 
 const Card = ({ movie }) => {
   return (
-    <Link className="movie-card" color="white">
+    <div className="movie-card" color="white">
       <div className="poster-container">
         <img
           src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
@@ -16,7 +16,7 @@ const Card = ({ movie }) => {
         </div>
       </div>
       <h3 className="movie-title">{movie.title}</h3>
-    </Link>
+    </div>
   );
 };
 

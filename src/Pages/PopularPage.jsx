@@ -31,7 +31,7 @@ const PopularPage = () => {
         <h2>Popular Movies</h2>
         {loading && (
           <>
-            <BeatLoader />
+            <BeatLoader size={24} color={"#ffffff"} />
           </>
         )}
         {error && <h3>{error.message}</h3>}

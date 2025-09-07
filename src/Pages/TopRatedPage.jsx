@@ -33,7 +33,7 @@ const TopRatedPage = () => {
       <div className="topratedpage-body">
         {loading && (
           <>
-            <BeatLoader />
+            <BeatLoader size={44} color={"#ffffff"} />
           </>
         )}
         {error && (
