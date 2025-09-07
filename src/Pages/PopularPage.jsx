@@ -28,7 +28,6 @@ const PopularPage = () => {
   return (
     <>
       <div className="Popularpage-body">
-        <h2>Popular Movies</h2>
         {loading && (
           <>
             <BeatLoader size={24} color={"#ffffff"} />

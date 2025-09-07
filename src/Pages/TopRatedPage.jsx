@@ -43,7 +43,6 @@ const TopRatedPage = () => {
         )}
         {!loading && error == null && (
           <>
-            <h2>Top Rated Movies</h2>
             <div className="movie-grid">
               {toprated.map((movie) => {
                 return <Card movie={movie} key={movie.id} />;

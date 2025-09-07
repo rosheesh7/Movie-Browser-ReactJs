@@ -6,7 +6,7 @@ const PageButton = ({ page, setPage }) => {
     <div className="page-buttons">
       {page > 1 && (
         <>
-          <button onClick={() => setPage((p) => p - 1)}>
+          <button onClick={() => setPage((p) => p - 2)}>
             <FaArrowLeft />
           </button>
           <button onClick={() => setPage((p) => p - 1)}>{page - 1}</button>
@@ -17,7 +17,7 @@ const PageButton = ({ page, setPage }) => {
       </button>
       <button onClick={() => setPage((p) => p + 1)}>{page + 1}</button>
 
-      <button onClick={() => setPage((p) => p + 1)}>
+      <button onClick={() => setPage((p) => p + 2)}>
         <FaArrowRight />
       </button>
     </div>

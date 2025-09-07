@@ -14,7 +14,7 @@ const HomePage = () => {
       try {
         setLoading(true);
         const response = await axios.get(
-          `https://api.themoviedb.org/3/discover/movie?api_key=8660ddaf26fc5943dfab32b00c89dc87&page=${page}`
+          `https://api.themoviedb.org/3/discover/movie?api_key=8660ddaf26fc5943dfab32b00c89dc87&sort_by=vote_count.desc&page=${page}`
         );
         setHomeMovies(response.data.results);
       } catch (err) {
@@ -29,10 +29,9 @@ const HomePage = () => {
   return (
     <>
       <div className="page-body">
-        <h2>Movies to enjoy</h2>
         {loading && (
           <>
-            <BeatLoader size={44} color={"#ffffff"} />
+            <BeatLoader size={36} color={"#ffffff"} />
           </>
         )}
         {error && <h3>{error.message}</h3>}

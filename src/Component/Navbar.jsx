@@ -8,7 +8,7 @@ const Navbar = () => {
     <>
       <nav>
         <NavLink to={"/"} className="logo">
-          <MdLocalMovies size={32} />
+          <MdLocalMovies size={54} />
           <span className="logo-title">CineMania</span>
         </NavLink>
 
